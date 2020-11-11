@@ -49,9 +49,9 @@ highlight! link             CocErrorSign                          DiffDelete
 highlight CocErrorHighlight cterm=UNDERLINE  ctermfg=Red          ctermbg=NONE
 highlight! link             CocWarningSign                        DiffChange
 highlight CocWarnHighlight  cterm=UNDERLINE  ctermfg=NONE         ctermbg=NONE
-highlight CocInfoSign       cterm=NONE       ctermfg=DarkGrey     ctermbg=NONE
+highlight CocInfoSign       cterm=NONE       ctermfg=Grey         ctermbg=NONE
 highlight CocInfoHighlight  cterm=UNDERLINE  ctermfg=NONE         ctermbg=NONE
-highlight CocHintSign       cterm=NONE       ctermfg=DarkGrey     ctermbg=NONE
+highlight CocHintSign       cterm=NONE       ctermfg=Grey         ctermbg=NONE
 highlight CocHintHighlight  cterm=UNDERLINE  ctermfg=NONE         ctermbg=NONE
 highlight! link             Error                                 CocErrorHighlight
 
