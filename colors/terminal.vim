@@ -61,7 +61,7 @@ highlight WarningMsg        cterm=NONE       ctermfg=Black        ctermbg=DarkYe
 highlight Search            cterm=reverse    ctermfg=Black        ctermbg=DarkYellow
 highlight IncSearch         cterm=NONE       ctermfg=Black        ctermbg=DarkYellow
 
-highlight! link             VertSplit                             LineNr
+highlight VertSplit         cterm=NONE       ctermfg=Black        ctermbg=Black     
 
 highlight Visual            cterm=NONE       ctermfg=NONE         ctermbg=Black
 
@@ -72,10 +72,12 @@ highlight TabLineFill       cterm=NONE       ctermfg=NONE         ctermbg=NONE
 " Tab pages line, active tab page label.
 highlight TabLineSel        cterm=NONE       ctermfg=Black        ctermbg=DarkBlue
 
+" vim edit mode message
+highlight ModeMsg           cterm=NONE       ctermfg=NONE         ctermbg=NONE
 " Status line of current window and wildmenu background.
-highlight StatusLine        cterm=NONE       ctermfg=White        ctermbg=Black
+highlight StatusLine        cterm=NONE       ctermfg=Black        ctermbg=Black
 " Status lines of not-current windows.
-highlight! link             StatusLineNC                          LineNr
+highlight StatusLineNC      cterm=NONE       ctermfg=DarkGrey     ctermbg=Black
 " Buffer number in status line.
 highlight StatusLineBufNo   cterm=NONE       ctermfg=Black        ctermbg=DarkGreen
 " Mode in status line.
@@ -87,9 +89,9 @@ highlight StatusLineInfo    cterm=NONE       ctermfg=Black        ctermbg=DarkYe
 " File encoding info in status line.
 highlight StatusLineEnc     cterm=NONE       ctermfg=White        ctermbg=Black
 " Status line of current window, if it is a terminal window.
-highlight StatusLineTerm    cterm=NONE       ctermfg=NONE         ctermbg=NONE
+highlight! link             StatusLineTerm                        StatusLine
 " Status lines of not-current windows that is a terminal window.
-highlight StatusLineTermNC  cterm=NONE       ctermfg=NONE         ctermbg=NONE
+highlight! link             StatusLineTermNC                      StatusLineNC
 
 " Currently selected item in wildmenu.
 highlight WildMenu          cterm=NONE       ctermfg=Black        ctermbg=DarkYellow
