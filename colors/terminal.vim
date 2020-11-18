@@ -61,7 +61,7 @@ highlight WarningMsg        cterm=NONE       ctermfg=Black        ctermbg=DarkYe
 highlight Search            cterm=reverse    ctermfg=Black        ctermbg=DarkYellow
 highlight IncSearch         cterm=NONE       ctermfg=Black        ctermbg=DarkYellow
 
-highlight VertSplit         cterm=NONE       ctermfg=Black        ctermbg=Black     
+highlight VertSplit         cterm=NONE       ctermfg=Black        ctermbg=Black
 
 highlight Visual            cterm=NONE       ctermfg=NONE         ctermbg=Black
 
@@ -75,7 +75,7 @@ highlight TabLineSel        cterm=NONE       ctermfg=Black        ctermbg=DarkBl
 " vim edit mode message
 highlight ModeMsg           cterm=NONE       ctermfg=NONE         ctermbg=NONE
 " Status line of current window and wildmenu background.
-highlight StatusLine        cterm=NONE       ctermfg=Black        ctermbg=Black
+highlight StatusLine        cterm=NONE       ctermfg=Grey         ctermbg=Black
 " Status lines of not-current windows.
 highlight StatusLineNC      cterm=NONE       ctermfg=DarkGrey     ctermbg=Black
 " Buffer number in status line.
@@ -117,5 +117,5 @@ highlight Type              cterm=NONE       ctermfg=Green        ctermbg=NONE
 highlight Statement         cterm=NONE       ctermfg=Red          ctermbg=NONE
 highlight Identifier        cterm=NONE       ctermfg=Cyan         ctermbg=NONE
 highlight Constant          cterm=NONE       ctermfg=Yellow       ctermbg=NONE
-highlight Special           cterm=NONE       ctermfg=Magenta      ctermbg=NONE 
-highlight PreProc           cterm=italic     ctermfg=Grey         ctermbg=NONE  
+highlight Special           cterm=NONE       ctermfg=Magenta      ctermbg=NONE
+highlight PreProc           cterm=italic     ctermfg=Grey         ctermbg=NONE
