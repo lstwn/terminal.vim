@@ -46,7 +46,7 @@ highlight SpellRare         cterm=UNDERLINE  ctermfg=Yellow       ctermbg=NONE
 highlight! link             SpellLocal                            SpellRare
 
 highlight! link             CocErrorSign                          DiffDelete
-highlight CocErrorHighlight cterm=UNDERLINE  ctermfg=Red          ctermbg=NONE
+highlight CocErrorHighlight cterm=UNDERLINE  ctermfg=NONE         ctermbg=NONE
 highlight! link             CocWarningSign                        DiffChange
 highlight CocWarnHighlight  cterm=UNDERLINE  ctermfg=NONE         ctermbg=NONE
 highlight CocInfoSign       cterm=NONE       ctermfg=Grey         ctermbg=NONE
