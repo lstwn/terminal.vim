@@ -87,7 +87,7 @@ highlight StatusLineFile    cterm=NONE       ctermfg=Black        ctermbg=DarkBl
 " Git info and file location in status line.
 highlight StatusLineInfo    cterm=NONE       ctermfg=Black        ctermbg=DarkYellow
 " File encoding info in status line.
-highlight StatusLineEnc     cterm=NONE       ctermfg=White        ctermbg=Black
+highlight StatusLineEnc     cterm=NONE       ctermfg=Black        ctermbg=DarkMagenta
 " Status line of current window, if it is a terminal window.
 highlight! link             StatusLineTerm                        StatusLine
 " Status lines of not-current windows that is a terminal window.
