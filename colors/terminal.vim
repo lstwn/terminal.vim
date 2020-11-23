@@ -67,8 +67,10 @@ highlight Visual            cterm=NONE       ctermfg=NONE         ctermbg=Black
 
 " Tab pages line, not active tab page label.
 highlight TabLine           cterm=NONE       ctermfg=White        ctermbg=Black
+highlight! link             TabLine                               StatusLineNC
 " Tab pages line, where there are no labels.
 highlight TabLineFill       cterm=NONE       ctermfg=NONE         ctermbg=NONE
+highlight! link             TabLineFill                           StatusLineNC
 " Tab pages line, active tab page label.
 highlight TabLineSel        cterm=NONE       ctermfg=Black        ctermbg=DarkBlue
 
