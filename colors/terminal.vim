@@ -115,9 +115,10 @@ highlight Directory         cterm=bold       ctermfg=Blue         ctermbg=NONE
 highlight Todo              cterm=italic     ctermfg=Yellow       ctermbg=NONE
 highlight Comment           cterm=NONE       ctermfg=DarkGrey     ctermbg=NONE
 highlight Underlined        cterm=underline  ctermfg=Blue         ctermbg=NONE
-highlight Type              cterm=NONE       ctermfg=Blue         ctermbg=NONE
+highlight Type              cterm=NONE       ctermfg=Magenta      ctermbg=NONE
 highlight Statement         cterm=NONE       ctermfg=Red          ctermbg=NONE
-highlight Identifier        cterm=NONE       ctermfg=Magenta      ctermbg=NONE
+highlight Keyword           cterm=NONE       ctermfg=Red          ctermbg=NONE
+highlight Identifier        cterm=NONE       ctermfg=Blue         ctermbg=NONE
 highlight Constant          cterm=NONE       ctermfg=Cyan         ctermbg=NONE
 highlight Special           cterm=NONE       ctermfg=Magenta      ctermbg=NONE
 highlight PreProc           cterm=italic     ctermfg=Grey         ctermbg=NONE
