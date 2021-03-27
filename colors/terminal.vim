@@ -58,7 +58,7 @@ highlight! link             Error                                 CocErrorHighli
 highlight ErrorMsg          cterm=NONE       ctermfg=Black        ctermbg=DarkRed
 highlight WarningMsg        cterm=NONE       ctermfg=Black        ctermbg=DarkYellow
 
-highlight Search            cterm=NONE       ctermfg=Yellow       ctermbg=NONE
+highlight Search            cterm=NONE       ctermfg=Yellow       ctermbg=Black
 highlight IncSearch         cterm=NONE       ctermfg=Black        ctermbg=DarkYellow
 
 highlight VertSplit         cterm=NONE       ctermfg=Black        ctermbg=Black
