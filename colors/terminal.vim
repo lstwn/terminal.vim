@@ -119,5 +119,5 @@ highlight Type              cterm=NONE       ctermfg=Blue         ctermbg=NONE
 highlight Statement         cterm=NONE       ctermfg=Red          ctermbg=NONE
 highlight Identifier        cterm=NONE       ctermfg=Magenta      ctermbg=NONE
 highlight Constant          cterm=NONE       ctermfg=Cyan         ctermbg=NONE
-highlight Special           cterm=NONE       ctermfg=Magenta      ctermbg=NONE
+highlight Special           cterm=NONE       ctermfg=DarkGrey     ctermbg=NONE
 highlight PreProc           cterm=italic     ctermfg=Grey         ctermbg=NONE
