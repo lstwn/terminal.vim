@@ -121,4 +121,4 @@ highlight Keyword           cterm=NONE       ctermfg=Red          ctermbg=NONE
 highlight Identifier        cterm=NONE       ctermfg=Blue         ctermbg=NONE
 highlight Constant          cterm=NONE       ctermfg=Cyan         ctermbg=NONE
 highlight Special           cterm=NONE       ctermfg=DarkGrey     ctermbg=NONE
-highlight PreProc           cterm=italic     ctermfg=Grey         ctermbg=NONE
+highlight PreProc           cterm=NONE       ctermfg=Grey         ctermbg=NONE
