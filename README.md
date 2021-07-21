@@ -9,7 +9,7 @@ applications.
 Use your favourite vim plugin manager. For instance, with `vim-plug`:
 
 ```
-Plug 'https://gitlab.com/lstwn/terminal.vim'
+Plug 'lstwn/terminal.vim'
 ```
 
 Then set in your `.vimrc`:
@@ -21,4 +21,3 @@ colorscheme terminal
 ## Customization
 
 You can use the `ColorScheme` autocommand event to tweak the colorscheme.
-
