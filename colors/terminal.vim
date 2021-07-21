@@ -90,6 +90,10 @@ highlight StatusLineFile    cterm=NONE       ctermfg=Black        ctermbg=DarkBl
 highlight StatusLineInfo    cterm=NONE       ctermfg=Black        ctermbg=DarkYellow
 " File encoding info in status line.
 highlight StatusLineEnc     cterm=NONE       ctermfg=Black        ctermbg=DarkMagenta
+" File location info in status line.
+highlight StatusLineLoc     cterm=NONE       ctermfg=Black        ctermbg=DarkCyan
+" Flags info in status line
+highlight StatusLineFlags   cterm=NONE       ctermfg=White        ctermbg=DarkGray
 " Status line of current window, if it is a terminal window.
 highlight! link             StatusLineTerm                        StatusLine
 " Status lines of not-current windows that is a terminal window.
