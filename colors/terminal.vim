@@ -25,8 +25,8 @@ highlight CursorColumn      cterm=NONE       ctermfg=NONE         ctermbg=NONE
 
 highlight CursorLineNr      cterm=bold       ctermfg=Yellow       ctermbg=NONE
 highlight LineNr            cterm=NONE       ctermfg=DarkGrey     ctermbg=NONE
-highlight LineNrAbove       cterm=NONE       ctermfg=NONE         ctermbg=NONE
-highlight LineNrBelow       cterm=NONE       ctermfg=NONE         ctermbg=NONE
+highlight link              LineNrAbove                           LineNr
+highlight link              LineNrBelow                           LineNr
 
 " Used for the columns set with 'colorcolumn', i.e. 80 char max limit.
 highlight ColorColumn       cterm=NONE       ctermfg=NONE         ctermbg=Black
