@@ -113,7 +113,7 @@ highlight! link             PmenuSel                              WildMenu
 " Popup menu: scrollbar.
 highlight PmenuSbar         cterm=NONE       ctermfg=NONE         ctermbg=Black
 " Popup menu: Thumb of the scrollbar.
-highlight PmenuThumb        cterm=NONE       ctermfg=NONE         ctermbg=DarkMagenta
+highlight PmenuThumb        cterm=NONE       ctermfg=NONE         ctermbg=DarkGrey
 
 highlight Directory         cterm=bold       ctermfg=Blue         ctermbg=NONE
 highlight Todo              cterm=italic     ctermfg=Yellow       ctermbg=NONE
@@ -126,3 +126,16 @@ highlight Identifier        cterm=NONE       ctermfg=Blue         ctermbg=NONE
 highlight Constant          cterm=NONE       ctermfg=Cyan         ctermbg=NONE
 highlight Special           cterm=NONE       ctermfg=DarkGrey     ctermbg=NONE
 highlight PreProc           cterm=NONE       ctermfg=Grey         ctermbg=NONE
+
+highlight CmpItemAbbrMatch            ctermfg=Yellow
+highlight link CmpItemAbbrMatchFuzzy  CmpItemAbbrMatch
+highlight CmpItemAbbrDeprecated       cterm=strikethrough ctermfg=Red ctermbg=NONE
+
+" highlight link CmpItemKindVariable    Constant
+" highlight link CmpItemKindFunction    Identifier
+" highlight link CmpItemKindMethod      CmpItemKindFunction
+" highlight link CmpItemKindInterface   Type
+" highlight link CmpItemKindText        Comment
+" highlight link CmpItemKindKeyword     Comment
+" highlight link CmpItemKindProperty    Comment
+" highlight CmpItemKindUnit             ctermfg=Green
