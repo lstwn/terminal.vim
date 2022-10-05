@@ -16,6 +16,7 @@ endif
 let g:colors_name="terminal"
 
 highlight Title             cterm=NONE       ctermfg=NONE         ctermbg=NONE
+highlight Normal            cterm=NONE       ctermfg=NONE         ctermbg=NONE
 
 highlight MatchParen        cterm=bold       ctermfg=Yellow       ctermbg=NONE
 
@@ -127,9 +128,13 @@ highlight Constant          cterm=NONE       ctermfg=Cyan         ctermbg=NONE
 highlight Special           cterm=NONE       ctermfg=DarkGrey     ctermbg=NONE
 highlight PreProc           cterm=NONE       ctermfg=Grey         ctermbg=NONE
 
-highlight CmpItemAbbrMatch            ctermfg=Yellow
-highlight link CmpItemAbbrMatchFuzzy  CmpItemAbbrMatch
-highlight CmpItemAbbrDeprecated       cterm=strikethrough ctermfg=Red ctermbg=NONE
+highlight CmpItemAbbrMatch                   ctermfg=Yellow
+highlight link CmpItemAbbrMatchFuzzy                              CmpItemAbbrMatch
+highlight CmpItemAbbrDeprecated              cterm=strikethrough ctermfg=Red ctermbg=NONE
+
+highlight TelescopeNormal   cterm=NONE       ctermfg=White        ctermbg=NONE
+highlight TelescopeBorder   cterm=NONE       ctermfg=DarkGray     ctermbg=NONE
+highlight link              TelescopeMatching                     Search
 
 " highlight link CmpItemKindVariable    Constant
 " highlight link CmpItemKindFunction    Identifier
