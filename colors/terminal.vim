@@ -1,6 +1,5 @@
 " Vim color file
 " Maintainer:	Leo Stewen <lstwn@mailbox.org>
-" Last Change:	2020 Nov 08
 
 " Set this *before* doing 'hi clear' because it affects the latter.
 set background=dark
@@ -30,7 +29,8 @@ highlight link              LineNrAbove                           LineNr
 highlight link              LineNrBelow                           LineNr
 
 " Used for the columns set with 'colorcolumn', i.e. 80 char max limit.
-highlight ColorColumn       cterm=NONE       ctermfg=NONE         ctermbg=Black
+highlight ColorColumn       cterm=NONE       ctermfg=NONE         ctermbg=black
+highlight WinSeparator      cterm=NONE       ctermfg=Black        ctermbg=NONE
 
 highlight! link             SignColumn                            LineNr
 highlight! link             FoldColumn                            LineNr
@@ -40,6 +40,7 @@ highlight Folded            cterm=NONE       ctermfg=Grey         ctermbg=Black
 highlight DiffAdd           cterm=NONE       ctermfg=Green        ctermbg=NONE
 highlight DiffChange        cterm=NONE       ctermfg=Yellow       ctermbg=NONE
 highlight DiffDelete        cterm=NONE       ctermfg=Red          ctermbg=NONE
+highlight DiffText          cterm=NONE       ctermfg=Yellow       ctermbg=Black
 
 highlight SpellBad          cterm=UNDERLINE  ctermfg=Red          ctermbg=NONE
 highlight! link             SpellCap                              SpellBad
@@ -56,49 +57,39 @@ highlight CocHintSign       cterm=NONE       ctermfg=Grey         ctermbg=NONE
 highlight CocHintHighlight  cterm=UNDERLINE  ctermfg=NONE         ctermbg=NONE
 highlight! link             Error                                 CocErrorHighlight
 
-highlight ErrorMsg          cterm=NONE       ctermfg=Black        ctermbg=DarkRed
-highlight WarningMsg        cterm=NONE       ctermfg=Black        ctermbg=DarkYellow
+highlight ErrorMsg          cterm=NONE       ctermfg=Red          ctermbg=NONE    
+highlight WarningMsg        cterm=NONE       ctermfg=Yellow       ctermbg=NONE      
 
 highlight Search            cterm=NONE       ctermfg=Yellow       ctermbg=Black
 highlight IncSearch         cterm=NONE       ctermfg=Black        ctermbg=DarkYellow
 
-highlight VertSplit         cterm=NONE       ctermfg=Black        ctermbg=Black
-
 highlight Visual            cterm=NONE       ctermfg=NONE         ctermbg=Black
-
-" Tab pages line, not active tab page label.
-highlight TabLine           cterm=NONE       ctermfg=White        ctermbg=Black
-highlight! link             TabLine                               StatusLineNC
-" Tab pages line, where there are no labels.
-highlight TabLineFill       cterm=NONE       ctermfg=NONE         ctermbg=NONE
-highlight! link             TabLineFill                           StatusLineNC
-" Tab pages line, active tab page label.
-highlight TabLineSel        cterm=NONE       ctermfg=Black        ctermbg=DarkBlue
 
 " vim edit mode message
 highlight ModeMsg           cterm=NONE       ctermfg=NONE         ctermbg=NONE
-" Status line of current window and wildmenu background.
+" status line of current window and wildmenu background.
 highlight StatusLine        cterm=NONE       ctermfg=Grey         ctermbg=Black
-" Status lines of not-current windows.
+" status lines of non-current windows.
 highlight StatusLineNC      cterm=NONE       ctermfg=DarkGrey     ctermbg=Black
-" Buffer number in status line.
-highlight StatusLineBufNo   cterm=NONE       ctermfg=Black        ctermbg=DarkGreen
-" Mode in status line.
-highlight StatusLineMode    cterm=NONE       ctermfg=Black        ctermbg=DarkRed
-" File path in status line.
-highlight StatusLineFile    cterm=NONE       ctermfg=Black        ctermbg=DarkBlue
-" Git info and file location in status line.
-highlight StatusLineInfo    cterm=NONE       ctermfg=Black        ctermbg=DarkYellow
-" File encoding info in status line.
-highlight StatusLineEnc     cterm=NONE       ctermfg=Black        ctermbg=DarkMagenta
-" File location info in status line.
-highlight StatusLineLoc     cterm=NONE       ctermfg=Black        ctermbg=DarkCyan
-" Flags info in status line
-highlight StatusLineFlags   cterm=NONE       ctermfg=White        ctermbg=DarkGray
-" Status line of current window, if it is a terminal window.
+" status line of current _terminal_ windows
 highlight! link             StatusLineTerm                        StatusLine
-" Status lines of not-current windows that is a terminal window.
+" status lines of non-current _terminal_ windows
 highlight! link             StatusLineTermNC                      StatusLineNC
+
+" tab pages line, where there are no labels
+highlight! link             TabLineFill                           StatusLine
+" tab pages line, not active tab page label and small 'x' at the right
+highlight! link             TabLine                               StatusLine
+" tab pages line, active tab page label
+highlight! link             TabLineSel                            BlueBlock
+
+highlight GreenBlock        cterm=NONE       ctermfg=Black        ctermbg=DarkGreen
+highlight RedBlock          cterm=NONE       ctermfg=Black        ctermbg=DarkRed
+highlight BlueBlock         cterm=NONE       ctermfg=Black        ctermbg=DarkBlue
+highlight YellowBlock       cterm=NONE       ctermfg=Black        ctermbg=DarkYellow
+highlight MagentaBlock      cterm=NONE       ctermfg=Black        ctermbg=DarkMagenta
+highlight CyanBlock         cterm=NONE       ctermfg=Black        ctermbg=DarkCyan
+highlight GrayBlock         cterm=NONE       ctermfg=White        ctermbg=DarkGray
 
 " Currently selected item in wildmenu.
 highlight WildMenu          cterm=NONE       ctermfg=Black        ctermbg=DarkYellow
@@ -108,7 +99,7 @@ highlight! link             Question                              WildMenu
 highlight QuickFixLine      cterm=NONE       ctermfg=NONE         ctermbg=Black
 
 " Popup menu: normal item.
-highlight Pmenu             cterm=NONE       ctermfg=Grey         ctermbg=Black
+highlight Pmenu             cterm=NONE       ctermfg=NONE         ctermbg=NONE
 " Popup menu: selected item.
 highlight! link             PmenuSel                              WildMenu
 " Popup menu: scrollbar.
@@ -129,11 +120,15 @@ highlight Special           cterm=NONE       ctermfg=DarkGrey     ctermbg=NONE
 highlight PreProc           cterm=NONE       ctermfg=Grey         ctermbg=NONE
 
 highlight CmpItemAbbrMatch                   ctermfg=Yellow
-highlight link CmpItemAbbrMatchFuzzy                              CmpItemAbbrMatch
-highlight CmpItemAbbrDeprecated              cterm=strikethrough ctermfg=Red ctermbg=NONE
+highlight link CmpItemAbbrMatchFuzzy CmpItemAbbrMatch
+highlight CmpItemAbbrDeprecated              cterm=strikethrough  ctermfg=Red ctermbg=NONE
 
-highlight TelescopeNormal   cterm=NONE       ctermfg=White        ctermbg=NONE
-highlight TelescopeBorder   cterm=NONE       ctermfg=DarkGray     ctermbg=NONE
+highlight! FloatBorder       cterm=NONE      ctermfg=DarkGray     ctermbg=NONE
+highlight! NormalFloat       cterm=NONE      ctermfg=NONE         ctermbg=NONE
+
+highlight link              TelescopeNormal                       NormalFloat
+highlight link              TelescopeBorder                       FloatBorder
+highlight link              LspInfoBorder                         FloatBorder
 highlight link              TelescopeMatching                     Search
 
 " highlight link CmpItemKindVariable    Constant
