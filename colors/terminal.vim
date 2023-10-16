@@ -47,6 +47,12 @@ highlight! link             SpellCap                              SpellBad
 highlight SpellRare         cterm=UNDERLINE  ctermfg=Yellow       ctermbg=NONE
 highlight! link             SpellLocal                            SpellRare
 
+highlight LspDiagnosticsDefaultError         ctermfg=Red
+highlight LspDiagnosticsDefaultWarning       ctermfg=Yellow
+highlight LspDiagnosticsDefaultInformation   ctermfg=DarkGrey
+highlight LspDiagnosticsDefaultHint          ctermfg=DarkGrey
+highlight QuickfixLine                       ctermfg=Yellow       ctermbg=none
+
 highlight! link             CocErrorSign                          DiffDelete
 highlight CocErrorHighlight cterm=UNDERLINE  ctermfg=NONE         ctermbg=NONE
 highlight! link             CocWarningSign                        DiffChange
